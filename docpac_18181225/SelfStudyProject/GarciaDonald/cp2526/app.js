@@ -15,13 +15,13 @@ app.get('/', (req, res) => {
     res.render ('index');
 })
 
-app.get('aboutus', (req, res) => {
+app.get('/aboutus', (req, res) => {
     res.render ('aboutus');
 });
-app.get('projinfo', (req, res) => {
+app.get('/projinfo', (req, res) => {
     res.render ('projinfo');
 });
 
 app.listen(3000, () => {
-    console.log('Server is running on http://localhost:3000')
+    console.log('Server is running on http://172.16.3.217:3000')
 })

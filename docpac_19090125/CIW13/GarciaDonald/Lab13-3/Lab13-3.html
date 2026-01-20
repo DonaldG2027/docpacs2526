@@ -42,7 +42,7 @@
 
 					console.log("Fetching for query:", query);
 
-					fetch("https://www.ucertify.com/utils/livesearch.php?q=" + encodeURIComponent(query))
+					fetch(`https://www.ucertify.com/utils/livesearch.php?q=${encodeURIComponent(str)}`)
 						.then(response => {
 							console.log("Fetch status:", response.status);
 							if (!response.ok) {
